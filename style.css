@@ -1,0 +1,57 @@
+:root{
+    --color1: #186cb8;
+    --color2: #2a9a9f;
+    --color3: #f98d00;
+    --color4: #e83611;
+    --color5: #f1b211;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+   /* width: 100wh;  */
+    /* height: 100%;  */
+    background: #b5b4b4;
+}
+.container{
+    line-height: 1;
+    display: grid;
+    min-height: calc(100vh - 16px);
+    position: relative;
+    place-items:center;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 10vw;
+    font-weight: 800;
+    text-align: center;
+    margin: auto;
+    width: 12ch;
+    position: absolute;
+    top: 200px;
+    text-transform: uppercase;
+    color: transparent;
+    /* text-shadow: 0 0 0 #333333; */
+    background: linear-gradient(
+        220deg,
+        var(--color1) 19%, 
+        transparent 19%, transparent 20%,
+        var(--color2) 20%, var(--color2) 39%,
+        transparent 39%, transparent 40%,
+        var(--color3) 40%, var(--color3) 59%,
+        transparent 59%, transparent 60%,
+        var(--color4) 60%, var(--color4) 79%,
+        transparent 79%, transparent 80%,
+        var(--color5) 80%, var(--color5) 100%
+    );
+    background-clip: text;
+}
+
+h2{
+    text-align: center;
+    margin-top: 18px;
+    position: absolute;
+}
